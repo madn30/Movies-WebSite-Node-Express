@@ -1,0 +1,30 @@
+<html>
+
+<body>
+    <form method="POST" action="/menu/HandleMovie">
+        <label>Name:</label><br>
+        <input type="text" name="name"><br>
+        <label>Lenguage:</label><br>
+       
+        <div id="language" class="checkbox">
+            <label><input type="checkbox" value="English" name="language">English</label>
+            <label><input type="checkbox" value="Spanish" name="language">Spanish</label>
+            <label><input type="checkbox" value="Hebrew" name="language">Hebrew</label>
+            <label><input type="checkbox" value="Arabic" name="language">Arabic</label>
+
+        </div>
+        <label>Genres:</label><br>
+        <div id="genres" class="checkbox">
+            <label><input type="checkbox" name="genres" value="Action">Action</label>
+            <label><input type="checkbox" name="genres" value="Comedy">Comedy</label>
+            <label><input type="checkbox" name="genres" value="Horror">Horror</label>
+            <label><input type="checkbox" name="genres" value="Drama">Drama</label>
+
+        </div>
+
+
+        <button type="submit" value="save">Click Me!</button>
+    </form>
+</body>
+
+</html>

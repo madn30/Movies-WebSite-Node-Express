@@ -1,0 +1,26 @@
+<html>
+    <form method="POST" action="/menu/UserInfo?id=<%=id%>&action=<%=Action%>" >
+        <%if(Action=="update"){%>
+        <label>Username:</label><br>
+        <input type="text" name="username" value ="<%=resp.username%>"><br>
+        <label >Password:</label><br>
+        <input type="text"  name="password" value ="<%=resp.password%>"><br>
+        <label >Created Date:</label><br>
+        <input type="date"  name="create" value ="<%=resp.create%>"><br>   
+        <label >Num of Transactions:</label><br>
+        <input type="text"  name="transaction" value ="<%=resp.transaction%>"><br>
+        <button style="margin-left: 50%;margin-top: 20;" type="submit"value="save">register</button>
+        <%}%>
+        <%if(Action=="new"){%>
+          <label>Username:</label><br>
+          <input type="text" name="username" ><br>
+          <label >Password:</label><br>
+          <input type="text"  name="password"><br>
+          <label >Created Date:</label><br>
+          <input type="date"  name="create" ><br>   
+          <label >Num of Transactions:</label><br>
+          <input type="text"  name="transaction"><br>
+          <button style="margin-left: 50%;margin-top: 20;" type="submit"value="save">register</button>
+          <%}%>
+      </form>
+</html>

@@ -1,0 +1,51 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<html>
+
+
+
+<body style="display: flex;justify-content: center;align-items: center;">
+    <form method="POST" action="/menu/GetTheMoviesSearch">
+       
+        <div id="name" class="form-group">
+            <!-- <label >Name:</label>
+            <input type="email" class="form-control" aria-describedby="emailHelp"
+                placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted">Enter Name Movie</small> -->
+        
+            <label>Movie Name:</label>
+            <input name="name" type="text" class="form-control" placeholder="Enter Movie Name" aria-label="Recipient's username"
+                aria-describedby="basic-addon2">
+
+
+        </div>
+        <div id="genres" class="checkbox">
+            <label><input type="checkbox" value="Action" name="genres">Action</label>
+            <label><input type="checkbox" value="Crime" name="genres">Crime</label>
+            <label><input type="checkbox" value="Drama" name="genres">Drama</label>
+            <label><input type="checkbox" value="Horror" name="genres">Horror</label>
+            <label><input type="checkbox" value="Romance" name="genres">Romance</label>
+            <label><input type="checkbox" value="Music" name="genres">Music</label>
+            <label><input type="checkbox" value="Thriller" name="genres">Thriller</label>
+            <label><input type="checkbox" value="Mystery" name="genres">Mystery</label>
+            <label><input type="checkbox" value="Supernatural" name="genres">Supernatural</label>
+            <label><input type="checkbox" value="Science-Fiction" name="genres">Science-Fiction</label>
+        </div>
+        <div id="language" class="checkbox">
+            <label><input type="checkbox" name="language" value="English">English</label>
+            <label><input type="checkbox" name="language" value="Japanese">Japanese</label>
+            <label><input type="checkbox" name="language" value="Hebrew">Hebrew</label>
+            <label><input type="checkbox" name="language" value="Spanish">Spanish</label>
+
+        </div>
+        <button type="submit" class="btn btn-primary">Search</button>
+        <a href="/menu">Back</a>
+    </form>
+    <div>
+ 
+    </div>
+    
+</body>
+
+</html>

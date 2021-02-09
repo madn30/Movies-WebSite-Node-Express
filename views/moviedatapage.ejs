@@ -1,0 +1,13 @@
+<html>
+    <body>
+      Id: <%=resp.id%> <br>
+      Name  <%=resp.name%> <br>
+      Language: <%=resp.language%>  <br>
+      Geners:  <%=resp.genres%> <br>
+        <%  if ("image" in resp){%>
+        <img src=<%=resp.image.original%> >
+      <%}%>
+      <a href="/menu">Back</a>
+    </body>
+  
+</html>

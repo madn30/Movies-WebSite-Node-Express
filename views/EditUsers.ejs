@@ -1,0 +1,9 @@
+<html>
+
+    <%Users.forEach(each=>{ %>
+        <li> 
+            <%=each.username %>   <a href="/menu/UserDataPage?id=<%=each.id%>&action=update">Updata</a> <a href="/menu/UserDataPage?id=<%=each.id%>&action=delete">Delete</a>
+       </li> 
+       <%}) %>
+       <a href="/menu/UserDataPage?action=new">Add New</a>
+</html>

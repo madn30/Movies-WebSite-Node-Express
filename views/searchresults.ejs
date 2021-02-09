@@ -1,0 +1,57 @@
+<html>
+
+
+<div style="display: flex;">
+    <table border="1" style="width: 100%;">
+        <tr>
+            <th>Exect Result:</th>
+            <th>Same Geners:</th>
+        </tr>
+
+        <tr>
+
+            <td>
+                <ul>
+                    <%DataShapin.search.forEach((each,index)=>{ %>
+                        <li>
+                            <a href="/menu/MovieDataPage?name=search&id=<%=each.id%>">
+                                <%=each.name %>
+                            </a>
+                        </li>
+                        <%}) %>
+                </ul>
+            </td>
+
+
+            <td>
+                <ul>
+                    <%DataShapin.genres.forEach((each,index)=>{ %>
+                        <li>
+                            <a href="/menu/MovieDataPage?name=search&id=<%=each.id%>">
+                                <%=each.name %>
+                            </a>
+                        </li>
+                        <%}) %>
+                </ul>
+            </td>
+        </tr>
+    </table>
+</div>
+<div>
+    <a href="/menu">Back</a>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
